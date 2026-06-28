@@ -1,0 +1,11 @@
+{
+  "device": "cpu",
+  "lama_package": "simple-lama-inpainting",
+  "mask_pad": 32,
+  "max_samples": 50,
+  "method": "gt_bbox_mask_plus_lama_dataset_v1",
+  "note": "Dataset branch v1. Motion/text/split come from the existing Penn Action mini dataset; scene_image_path is replaced by bbox+LaMa background.",
+  "run_id": "bbox_lama_dataset_50_test_001",
+  "source_manifest": "project_data/datasets/penn_action/mini_move_in_2d/manifest_filtered.jsonl",
+  "torch_home": "/data/code/demo_move_in_2d/project_data/models/torch"
+}

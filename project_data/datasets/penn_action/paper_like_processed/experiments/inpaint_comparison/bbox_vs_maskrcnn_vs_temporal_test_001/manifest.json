@@ -1,0 +1,57 @@
+[
+  {
+    "action_label": "baseball_pitch",
+    "bbox_background_path": "project_data/datasets/penn_action/paper_like_processed/experiments/gt_mask_inpaint_baseline/bbox_cv2_telea_test_001/backgrounds_inpainted/0001_000_opencv_telea_gt_bbox_baseline.jpg",
+    "contact_sheet": "project_data/datasets/penn_action/paper_like_processed/experiments/inpaint_comparison/bbox_vs_maskrcnn_vs_temporal_test_001/contact_sheets/0001_000_comparison.jpg",
+    "mask_rcnn_background_path": "project_data/datasets/penn_action/paper_like_processed/experiments/mask_rcnn_inpaint/mask_rcnn_cv2_telea_test_002/backgrounds_inpainted/0001_000_mask_rcnn_opencv_telea.jpg",
+    "neighbor_frames_used": 12,
+    "sample_id": "0001_000",
+    "temporal_background_path": "project_data/datasets/penn_action/paper_like_processed/experiments/mask_rcnn_temporal_fill/mask_rcnn_temporal_fill_test_001/backgrounds_filled/0001_000_temporal_fill.jpg",
+    "temporal_coverage": 0.3509036144578313,
+    "video_id": "0001"
+  },
+  {
+    "action_label": "baseball_pitch",
+    "bbox_background_path": "project_data/datasets/penn_action/paper_like_processed/experiments/gt_mask_inpaint_baseline/bbox_cv2_telea_test_001/backgrounds_inpainted/0001_001_opencv_telea_gt_bbox_baseline.jpg",
+    "contact_sheet": "project_data/datasets/penn_action/paper_like_processed/experiments/inpaint_comparison/bbox_vs_maskrcnn_vs_temporal_test_001/contact_sheets/0001_001_comparison.jpg",
+    "mask_rcnn_background_path": "project_data/datasets/penn_action/paper_like_processed/experiments/mask_rcnn_inpaint/mask_rcnn_cv2_telea_test_002/backgrounds_inpainted/0001_001_mask_rcnn_opencv_telea.jpg",
+    "neighbor_frames_used": 12,
+    "sample_id": "0001_001",
+    "temporal_background_path": "project_data/datasets/penn_action/paper_like_processed/experiments/mask_rcnn_temporal_fill/mask_rcnn_temporal_fill_test_001/backgrounds_filled/0001_001_temporal_fill.jpg",
+    "temporal_coverage": 0.4563420545646635,
+    "video_id": "0001"
+  },
+  {
+    "action_label": "baseball_pitch",
+    "bbox_background_path": "project_data/datasets/penn_action/paper_like_processed/experiments/gt_mask_inpaint_baseline/bbox_cv2_telea_test_001/backgrounds_inpainted/0001_002_opencv_telea_gt_bbox_baseline.jpg",
+    "contact_sheet": "project_data/datasets/penn_action/paper_like_processed/experiments/inpaint_comparison/bbox_vs_maskrcnn_vs_temporal_test_001/contact_sheets/0001_002_comparison.jpg",
+    "mask_rcnn_background_path": "project_data/datasets/penn_action/paper_like_processed/experiments/mask_rcnn_inpaint/mask_rcnn_cv2_telea_test_002/backgrounds_inpainted/0001_002_mask_rcnn_opencv_telea.jpg",
+    "neighbor_frames_used": 12,
+    "sample_id": "0001_002",
+    "temporal_background_path": "project_data/datasets/penn_action/paper_like_processed/experiments/mask_rcnn_temporal_fill/mask_rcnn_temporal_fill_test_001/backgrounds_filled/0001_002_temporal_fill.jpg",
+    "temporal_coverage": 0.9256031459241152,
+    "video_id": "0001"
+  },
+  {
+    "action_label": "baseball_pitch",
+    "bbox_background_path": "project_data/datasets/penn_action/paper_like_processed/experiments/gt_mask_inpaint_baseline/bbox_cv2_telea_test_001/backgrounds_inpainted/0001_003_opencv_telea_gt_bbox_baseline.jpg",
+    "contact_sheet": "project_data/datasets/penn_action/paper_like_processed/experiments/inpaint_comparison/bbox_vs_maskrcnn_vs_temporal_test_001/contact_sheets/0001_003_comparison.jpg",
+    "mask_rcnn_background_path": "project_data/datasets/penn_action/paper_like_processed/experiments/mask_rcnn_inpaint/mask_rcnn_cv2_telea_test_002/backgrounds_inpainted/0001_003_mask_rcnn_opencv_telea.jpg",
+    "neighbor_frames_used": 12,
+    "sample_id": "0001_003",
+    "temporal_background_path": "project_data/datasets/penn_action/paper_like_processed/experiments/mask_rcnn_temporal_fill/mask_rcnn_temporal_fill_test_001/backgrounds_filled/0001_003_temporal_fill.jpg",
+    "temporal_coverage": 0.6834853483407723,
+    "video_id": "0001"
+  },
+  {
+    "action_label": "baseball_pitch",
+    "bbox_background_path": "project_data/datasets/penn_action/paper_like_processed/experiments/gt_mask_inpaint_baseline/bbox_cv2_telea_test_001/backgrounds_inpainted/0002_000_opencv_telea_gt_bbox_baseline.jpg",
+    "contact_sheet": "project_data/datasets/penn_action/paper_like_processed/experiments/inpaint_comparison/bbox_vs_maskrcnn_vs_temporal_test_001/contact_sheets/0002_000_comparison.jpg",
+    "mask_rcnn_background_path": "project_data/datasets/penn_action/paper_like_processed/experiments/mask_rcnn_inpaint/mask_rcnn_cv2_telea_test_002/backgrounds_inpainted/0002_000_mask_rcnn_opencv_telea.jpg",
+    "neighbor_frames_used": 12,
+    "sample_id": "0002_000",
+    "temporal_background_path": "project_data/datasets/penn_action/paper_like_processed/experiments/mask_rcnn_temporal_fill/mask_rcnn_temporal_fill_test_001/backgrounds_filled/0002_000_temporal_fill.jpg",
+    "temporal_coverage": 1.0,
+    "video_id": "0002"
+  }
+]

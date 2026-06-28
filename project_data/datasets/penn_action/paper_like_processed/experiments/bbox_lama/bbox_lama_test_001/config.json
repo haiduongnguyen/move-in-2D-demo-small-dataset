@@ -1,0 +1,10 @@
+{
+  "device": "cpu",
+  "lama_package": "simple-lama-inpainting",
+  "mask_pad": 32,
+  "max_samples": 5,
+  "method": "gt_bbox_mask_plus_lama",
+  "note": "Uses padded Penn Action/GT motion bbox as a coarse erase region, then fills pixels with LaMa.",
+  "run_id": "bbox_lama_test_001",
+  "torch_home": "/data/code/demo_move_in_2d/project_data/models/torch"
+}

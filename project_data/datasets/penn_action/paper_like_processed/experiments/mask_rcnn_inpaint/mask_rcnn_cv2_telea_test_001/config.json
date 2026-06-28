@@ -1,0 +1,13 @@
+{
+  "dilate_px": 7,
+  "inpaint_radius": 5.0,
+  "mask_threshold": 0.5,
+  "max_samples": 5,
+  "method": "opencv_mask_rcnn_person_mask_plus_opencv_telea",
+  "model_config": "project_data/models/opencv/mask_rcnn_inception_v2_coco/mask_rcnn_inception_v2_coco_2018_01_28.pbtxt",
+  "model_graph": "project_data/models/opencv/mask_rcnn_inception_v2_coco/frozen_inference_graph.pb",
+  "note": "GT bbox is used only to select the target person detection for controlled comparison.",
+  "opencv_method": "telea",
+  "run_id": "mask_rcnn_cv2_telea_test_001",
+  "score_threshold": 0.5
+}

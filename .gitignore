@@ -1,0 +1,37 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# Local/editor noise
+.DS_Store
+
+# Heavy/generated project data. Keep only small report/demo experiments below.
+project_data/*
+!project_data/datasets/
+project_data/datasets/*
+!project_data/datasets/penn_action/
+project_data/datasets/penn_action/*
+
+# Keep small experiment artifacts for documentation/review.
+!project_data/datasets/penn_action/paper_like_processed/
+project_data/datasets/penn_action/paper_like_processed/*
+!project_data/datasets/penn_action/paper_like_processed/experiments/
+!project_data/datasets/penn_action/paper_like_processed/experiments/**
+
+# Keep small 50-sample paper-like demo datasets, ignore the full dataset.
+!project_data/datasets/penn_action/paper_like_mini_move_in_2d/
+project_data/datasets/penn_action/paper_like_mini_move_in_2d/*
+!project_data/datasets/penn_action/paper_like_mini_move_in_2d/bbox_lama_dataset_50_test_001/
+!project_data/datasets/penn_action/paper_like_mini_move_in_2d/bbox_lama_dataset_50_test_001/**
+!project_data/datasets/penn_action/paper_like_mini_move_in_2d/bbox_lama_dataset_50_balanced_test_001/
+!project_data/datasets/penn_action/paper_like_mini_move_in_2d/bbox_lama_dataset_50_balanced_test_001/**
+
+# Explicit heavy paths.
+project_data/datasets/penn_action/raw/
+project_data/datasets/penn_action/processed/
+project_data/datasets/penn_action/mini_move_in_2d/
+project_data/datasets/penn_action/paper_like_mini_move_in_2d/bbox_lama_dataset_full_001/
+project_data/models/
+project_data/logs/

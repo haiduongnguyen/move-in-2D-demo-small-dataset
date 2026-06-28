@@ -1,0 +1,47 @@
+[
+  {
+    "action_label": "baseball_pitch",
+    "contact_sheet": "project_data/datasets/penn_action/paper_like_processed/experiments/inpaint_comparison/bbox_cv2_telea_vs_ns_test_001/contact_sheets/0001_000_telea_vs_ns.jpg",
+    "ns_background_path": "project_data/datasets/penn_action/paper_like_processed/experiments/gt_mask_inpaint_baseline/bbox_cv2_ns_test_001/backgrounds_inpainted/0001_000_opencv_ns_gt_bbox_baseline.jpg",
+    "sample_id": "0001_000",
+    "scene_source_path": "project_data/datasets/penn_action/raw/Penn_Action/frames/0001/000033.jpg",
+    "telea_background_path": "project_data/datasets/penn_action/paper_like_processed/experiments/gt_mask_inpaint_baseline/bbox_cv2_telea_test_001/backgrounds_inpainted/0001_000_opencv_telea_gt_bbox_baseline.jpg",
+    "video_id": "0001"
+  },
+  {
+    "action_label": "baseball_pitch",
+    "contact_sheet": "project_data/datasets/penn_action/paper_like_processed/experiments/inpaint_comparison/bbox_cv2_telea_vs_ns_test_001/contact_sheets/0001_001_telea_vs_ns.jpg",
+    "ns_background_path": "project_data/datasets/penn_action/paper_like_processed/experiments/gt_mask_inpaint_baseline/bbox_cv2_ns_test_001/backgrounds_inpainted/0001_001_opencv_ns_gt_bbox_baseline.jpg",
+    "sample_id": "0001_001",
+    "scene_source_path": "project_data/datasets/penn_action/raw/Penn_Action/frames/0001/000065.jpg",
+    "telea_background_path": "project_data/datasets/penn_action/paper_like_processed/experiments/gt_mask_inpaint_baseline/bbox_cv2_telea_test_001/backgrounds_inpainted/0001_001_opencv_telea_gt_bbox_baseline.jpg",
+    "video_id": "0001"
+  },
+  {
+    "action_label": "baseball_pitch",
+    "contact_sheet": "project_data/datasets/penn_action/paper_like_processed/experiments/inpaint_comparison/bbox_cv2_telea_vs_ns_test_001/contact_sheets/0001_002_telea_vs_ns.jpg",
+    "ns_background_path": "project_data/datasets/penn_action/paper_like_processed/experiments/gt_mask_inpaint_baseline/bbox_cv2_ns_test_001/backgrounds_inpainted/0001_002_opencv_ns_gt_bbox_baseline.jpg",
+    "sample_id": "0001_002",
+    "scene_source_path": "project_data/datasets/penn_action/raw/Penn_Action/frames/0001/000097.jpg",
+    "telea_background_path": "project_data/datasets/penn_action/paper_like_processed/experiments/gt_mask_inpaint_baseline/bbox_cv2_telea_test_001/backgrounds_inpainted/0001_002_opencv_telea_gt_bbox_baseline.jpg",
+    "video_id": "0001"
+  },
+  {
+    "action_label": "baseball_pitch",
+    "contact_sheet": "project_data/datasets/penn_action/paper_like_processed/experiments/inpaint_comparison/bbox_cv2_telea_vs_ns_test_001/contact_sheets/0001_003_telea_vs_ns.jpg",
+    "ns_background_path": "project_data/datasets/penn_action/paper_like_processed/experiments/gt_mask_inpaint_baseline/bbox_cv2_ns_test_001/backgrounds_inpainted/0001_003_opencv_ns_gt_bbox_baseline.jpg",
+    "sample_id": "0001_003",
+    "scene_source_path": "project_data/datasets/penn_action/raw/Penn_Action/frames/0001/000120.jpg",
+    "telea_background_path": "project_data/datasets/penn_action/paper_like_processed/experiments/gt_mask_inpaint_baseline/bbox_cv2_telea_test_001/backgrounds_inpainted/0001_003_opencv_telea_gt_bbox_baseline.jpg",
+    "video_id": "0001"
+  },
+  {
+    "action_label": "baseball_pitch",
+    "contact_sheet": "project_data/datasets/penn_action/paper_like_processed/experiments/inpaint_comparison/bbox_cv2_telea_vs_ns_test_001/contact_sheets/0002_000_telea_vs_ns.jpg",
+    "ns_background_path": "project_data/datasets/penn_action/paper_like_processed/experiments/gt_mask_inpaint_baseline/bbox_cv2_ns_test_001/backgrounds_inpainted/0002_000_opencv_ns_gt_bbox_baseline.jpg",
+    "sample_id": "0002_000",
+    "scene_source_path": "project_data/datasets/penn_action/raw/Penn_Action/frames/0002/000033.jpg",
+    "telea_background_path": "project_data/datasets/penn_action/paper_like_processed/experiments/gt_mask_inpaint_baseline/bbox_cv2_telea_test_001/backgrounds_inpainted/0002_000_opencv_telea_gt_bbox_baseline.jpg",
+    "video_id": "0002"
+  }
+]

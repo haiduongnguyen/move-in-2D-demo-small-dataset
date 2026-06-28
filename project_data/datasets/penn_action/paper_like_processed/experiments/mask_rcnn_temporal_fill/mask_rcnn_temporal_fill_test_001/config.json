@@ -1,0 +1,13 @@
+{
+  "dilate_px": 7,
+  "inpaint_radius": 5.0,
+  "mask_threshold": 0.5,
+  "max_samples": 5,
+  "method": "mask_rcnn_temporal_fill_plus_opencv_finish",
+  "neighbor_radius": 24,
+  "neighbor_stride": 4,
+  "note": "Uses neighboring frames to fill masked target pixels before OpenCV inpaint cleanup.",
+  "opencv_method": "telea",
+  "run_id": "mask_rcnn_temporal_fill_test_001",
+  "score_threshold": 0.5
+}

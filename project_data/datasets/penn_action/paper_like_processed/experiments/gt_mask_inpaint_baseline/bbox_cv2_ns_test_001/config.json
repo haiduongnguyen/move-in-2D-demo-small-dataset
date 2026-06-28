@@ -1,0 +1,9 @@
+{
+  "inpaint_radius": 5.0,
+  "mask_pad": 16,
+  "max_samples": 5,
+  "method": "gt_bbox_mask_plus_opencv_ns",
+  "note": "Debug baseline only. Uses GT bbox rectangle, not paper-like segmentation.",
+  "opencv_method": "ns",
+  "run_id": "bbox_cv2_ns_test_001"
+}

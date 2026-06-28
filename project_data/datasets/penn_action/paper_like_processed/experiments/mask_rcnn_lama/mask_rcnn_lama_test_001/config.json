@@ -1,0 +1,14 @@
+{
+  "device": "cpu",
+  "dilate_px": 7,
+  "lama_package": "simple-lama-inpainting",
+  "mask_threshold": 0.5,
+  "max_samples": 5,
+  "method": "opencv_mask_rcnn_person_mask_plus_lama",
+  "model_config": "project_data/models/opencv/mask_rcnn_inception_v2_coco/mask_rcnn_inception_v2_coco_2018_01_28.pbtxt",
+  "model_graph": "project_data/models/opencv/mask_rcnn_inception_v2_coco/frozen_inference_graph.pb",
+  "note": "GT bbox is used only to select the target person detection; mask comes from Mask R-CNN and pixels are filled by LaMa.",
+  "run_id": "mask_rcnn_lama_test_001",
+  "score_threshold": 0.5,
+  "torch_home": "/data/code/demo_move_in_2d/project_data/models/torch"
+}
