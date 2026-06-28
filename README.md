@@ -90,3 +90,42 @@ outputs are preserved:
 ```bash
 python3 scripts/penn_action/paper_like_pipeline.py gt-mask-inpaint-baseline --max-samples 5 --run-name bbox_cv2_telea_test_001
 ```
+
+## Dataset Loader And Baseline Training
+
+The current trainable mini task is:
+
+```text
+bbox+LaMa background image + text/action prompt -> 64-frame 2D keypoint motion
+```
+
+The default local config points to the full bbox+LaMa dataset:
+
+```text
+configs/penn_action_bbox_lama_full.json
+```
+
+Smoke-test the PyTorch dataloader:
+
+```bash
+python3 scripts/train/smoke_dataset.py --split train --batch-size 4
+```
+
+Render a few skeleton previews from dataset rows:
+
+```bash
+python3 scripts/train/render_dataset_samples.py --split train --count 3 --write-video
+```
+
+Train the first tiny text/action-only baseline:
+
+```bash
+python3 scripts/train/train_text_baseline.py --epochs 3 --batch-size 64 --device cpu
+```
+
+Training/debug outputs are written under:
+
+```text
+project_data/debug_runs/
+project_data/training_runs/
+```

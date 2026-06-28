@@ -1,0 +1,9 @@
+{
+  "name": "penn_action_bbox_lama_full",
+  "manifest_path": "project_data/datasets/penn_action/paper_like_mini_move_in_2d/bbox_lama_dataset_full_001/manifest_filtered.jsonl",
+  "image_size": 224,
+  "num_frames": 64,
+  "num_joints": 13,
+  "output_root": "project_data/training_runs"
+}
+
