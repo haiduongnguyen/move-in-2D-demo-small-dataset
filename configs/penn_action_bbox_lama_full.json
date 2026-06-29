@@ -4,6 +4,16 @@
   "image_size": 224,
   "num_frames": 64,
   "num_joints": 13,
-  "output_root": "project_data/training_runs"
+  "output_root": "project_data/training_runs",
+  "condition_cache_root": "project_data/condition_cache/penn_action_bbox_lama_full",
+  "clip_model": "openai/clip-vit-base-patch32",
+  "dinov2_model": "facebook/dinov2-small",
+  "scene_tokens": 16,
+  "text_dim": 512,
+  "scene_dim": 384,
+  "diffusion_timesteps": 1000,
+  "ddim_steps": 50,
+  "d_model": 256,
+  "num_layers": 4,
+  "num_heads": 4
 }
-

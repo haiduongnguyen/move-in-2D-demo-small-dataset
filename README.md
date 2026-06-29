@@ -123,9 +123,29 @@ Train the first tiny text/action-only baseline:
 python3 scripts/train/train_text_baseline.py --epochs 3 --batch-size 64 --device cpu
 ```
 
+Precompute frozen CLIP/DINOv2 condition embeddings:
+
+```bash
+python3 scripts/train/precompute_condition_embeddings.py --max-samples 8 --device cpu
+python3 scripts/train/precompute_condition_embeddings.py --device cpu
+```
+
+Train the paper-like mini diffusion transformer:
+
+```bash
+python3 scripts/train/train_mini_diffusion.py --epochs 20 --batch-size 32 --device cpu
+```
+
+Run inference from a checkpoint:
+
+```bash
+python3 scripts/train/infer_mini_diffusion.py --checkpoint project_data/training_runs/<run_name>/best.pt --split val --count 3 --device cpu
+```
+
 Training/debug outputs are written under:
 
 ```text
 project_data/debug_runs/
 project_data/training_runs/
+project_data/condition_cache/
 ```
