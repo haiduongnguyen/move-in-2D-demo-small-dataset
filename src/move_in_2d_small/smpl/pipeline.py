@@ -28,6 +28,7 @@ SMPL_PROCESSED_ROOT = DATASET_ROOT / "smpl_processed"
 SMPL_DATASET_ROOT = DATASET_ROOT / "paper_like_smpl_mini_move_in_2d"
 DEFAULT_4D_HUMANS_ROOT = PROJECT_DATA / "models" / "4d_humans" / "4D-Humans"
 DEFAULT_SMPL_MODEL_ROOT = PROJECT_DATA / "models" / "smpl"
+FOURD_HUMANS_HOME = PROJECT_DATA / "models" / "4d_humans" / "home"
 LOG_ROOT = PROJECT_DATA / "logs" / "smpl_extract"
 
 PENN_EDGES = [
@@ -79,6 +80,7 @@ def ensure_layout() -> None:
         SMPL_DATASET_ROOT,
         DEFAULT_4D_HUMANS_ROOT.parent,
         DEFAULT_SMPL_MODEL_ROOT,
+        FOURD_HUMANS_HOME,
         LOG_ROOT,
     ]:
         path.mkdir(parents=True, exist_ok=True)
@@ -180,11 +182,17 @@ def check_setup(
     smpl_root = resolve_project_path(smpl_model_root)
     track_py = fourd_root / "track.py"
     demo_py = fourd_root / "demo.py"
+    phalp_smpl_cache = FOURD_HUMANS_HOME / ".cache" / "phalp" / "3D" / "models" / "smpl" / "SMPL_NEUTRAL.pkl"
+    hmr2_smpl_cache = FOURD_HUMANS_HOME / ".cache" / "4DHumans" / "data" / "smpl" / "SMPL_NEUTRAL.pkl"
     smpl_candidates = [
+        smpl_root / "basicModel_neutral_lbs_10_207_0_v1.0.0.pkl",
         smpl_root / "SMPL_NEUTRAL.pkl",
         smpl_root / "SMPL_NEUTRAL.npz",
+        fourd_root / "data" / "basicModel_neutral_lbs_10_207_0_v1.0.0.pkl",
         fourd_root / "data" / "smpl" / "SMPL_NEUTRAL.pkl",
         fourd_root / "data" / "smpl" / "SMPL_NEUTRAL.npz",
+        phalp_smpl_cache,
+        hmr2_smpl_cache,
     ]
     env = {
         "python": sys.executable,
@@ -196,10 +204,15 @@ def check_setup(
         "demo_py_exists": demo_py.exists(),
         "smpl_model_candidates": [str(path) for path in smpl_candidates],
         "smpl_model_exists": any(path.exists() for path in smpl_candidates),
+        "project_cache_home": str(FOURD_HUMANS_HOME),
+        "phalp_required_smpl_cache": str(phalp_smpl_cache),
+        "hmr2_required_smpl_cache": str(hmr2_smpl_cache),
         "notes": [
             "4D-Humans is intentionally kept outside the project package.",
             "If this check fails, clone/setup 4D-Humans under project_data/models/4d_humans/4D-Humans or pass --fourd-humans-root.",
-            "SMPL neutral model files are license-gated and may need manual download.",
+            "SMPL neutral model files are license-gated and must be downloaded manually from the official SMPL/SMPLify access flow.",
+            "The original 4D-Humans README asks for basicModel_neutral_lbs_10_207_0_v1.0.0.pkl in 4D-Humans/data/.",
+            "PHALP expects a converted SMPL_NEUTRAL.pkl under HOME/.cache/phalp/3D/models/smpl/.",
         ],
     }
     env["ok"] = bool(env["track_py_exists"] and env["smpl_model_exists"])
@@ -278,7 +291,7 @@ def run_4dhumans_extract(
             python_bin,
             str(resolve_project_path(fourd_humans_root) / "track.py"),
             f"video.source={frame_dir}",
-            f"output_dir={output_dir}",
+            f"video.output_dir={output_dir}",
         ]
         cmd.extend(extra_args or [])
         record = {
@@ -291,12 +304,16 @@ def run_4dhumans_extract(
         if dry_run:
             record["returncode"] = None
         else:
+            env = os.environ.copy()
+            env["HOME"] = str(FOURD_HUMANS_HOME)
+            env["XDG_CACHE_HOME"] = str(FOURD_HUMANS_HOME / ".cache")
             proc = subprocess.run(
                 cmd,
                 cwd=resolve_project_path(fourd_humans_root),
                 text=True,
                 stdout=subprocess.PIPE,
                 stderr=subprocess.STDOUT,
+                env=env,
                 check=False,
             )
             record["returncode"] = proc.returncode
